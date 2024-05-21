@@ -73,7 +73,9 @@ export const getCurrentUser = async (req, res) => {
     try {
         const data = req.user;
         const user = await userModel.findOne({ email: data.email })
-        console.log(user)
+        res
+        .status(StatusCodes.OK)
+        .json(user)
     } catch (error) {
         res.josn({ err })
     }
