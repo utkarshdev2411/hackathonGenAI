@@ -1,0 +1,39 @@
+.doctor-profile-container{
+    padding-top: 80px;
+    padding-left: 50px;
+}
+
+.profile-card {
+  font-family: Arial, sans-serif;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  width: 870px;
+  height: 300px;
+
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+}
+
+.profile-image {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  margin-right: 20px;
+}
+
+
+
+.dental-icon {
+  /* Add styles for the dental icon here */
+}
+
+.rating-verified {
+  margin-top: 20px;
+}
+
+.verified-checkmark {
+  /* Add styles for the verified checkmark here */
+}
