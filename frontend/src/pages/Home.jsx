@@ -1,7 +1,16 @@
+<<<<<<< HEAD
+=======
+import React, { useState } from 'react';
+>>>>>>> 3997e6510e7542507e27aa9a2b1d4eb97d0ff801
 import '../styles/Home.css'; // Make sure to name your CSS file accordingly
+import { IoSearch } from "react-icons/io5";
 
 function Home() {
+  const [prompt,setPrompt]=useState("");
 
+  const handleClick=()=>{
+    console.log(prompt)
+  }
   return (
 
     <div className="cosmo-chat">
@@ -24,23 +33,17 @@ function Home() {
           <h1>Welcome to Cosmo👋</h1>
         </header>
 
-        <div className="search-container">
-          <input type="text" placeholder="Ask anything to Cosmo..." />
+        <div className=" w-[777.6px] mb-4 flex gap-4 px-6 py-4 rounded-md border-[1px] shadow-md ">
+          <input className='py-3 px-4 outline-none bg-transparent text-slate-200' type="text" placeholder="Ask anything to Cosmo..." value={prompt} onChange={e=>setPrompt(e.target.value)} />
+          <button onClick={handleClick}><IoSearch className='text-xl '/></button>
         </div>
 
         <div className='drs'>
           <div className='drcards'><ProfileCard /></div>
           <div className='drcards'><ProfileCard /></div>
         </div>
-
-        <div className="suggested-actions">
-          {/* Add buttons for suggested actions */}
-        </div>
       </main>
 
-
-      <footer className="footer">
-      </footer>
     </div>
   );
 
@@ -48,8 +51,8 @@ function Home() {
 const ProfileCard = () => {
   return (
     <div className="profile-card">
-      <div className="logo-section">
-        <img src="src/assets/demodr.jpg" alt="logo" />
+      <div className="w-20 h-20 mr-4 overflow-hidden rounded-full object-center">
+        <img className='w-20 h-20 ' src="src/assets/demodr.jpg" alt="logo" />
       </div>
 
       <div className="info-section">

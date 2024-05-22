@@ -2,13 +2,13 @@
   display: flex;
   height: 95vh;
   --tw-bg-opacity: 1;
-  background-color: #19191a;
+  background-color: #131b28;
   color: white;
 }
 
 .sidebar {
   width: 20%;
-  background-color: #222123;
+  background-color: #040608;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -52,14 +52,14 @@
   padding: 0.5rem;
 }
 
-.search-container input[type="text"] {
+/* .search-container input[type="text"] {
   width: 777.6px;
   height: 96px;
   padding: 10px;
   margin-bottom: 30px;
   border: none;
   border-radius: 5px;
-}
+} */
 
 .footer {
   position: absolute;
