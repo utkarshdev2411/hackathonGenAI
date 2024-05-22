@@ -7,7 +7,9 @@ import google.generativeai as genai
 
 ##Configure API key
 genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
-
+from flask import Flask, request, jsonify
+from flask import jsonify
+from flask_cors import CORS
 
 
 
@@ -24,9 +26,11 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 #     response=model.generate_content([prompt[0],question])
 #     return response.text
 
-from flask import Flask, request, jsonify
 
 app = Flask(__name__)
+
+CORS(app)
+
 
 @app.route('/gemini', methods=['POST'])
 def get_gemini_response():

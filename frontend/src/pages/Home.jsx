@@ -1,15 +1,15 @@
-<<<<<<< HEAD
-=======
+
 import React, { useState } from 'react';
->>>>>>> 3997e6510e7542507e27aa9a2b1d4eb97d0ff801
+
 import '../styles/Home.css'; // Make sure to name your CSS file accordingly
 import { IoSearch } from "react-icons/io5";
 
 function Home() {
   const [prompt,setPrompt]=useState("");
+  
 
   const handleClick=()=>{
-    console.log(prompt)
+    console.log(prompt);
   }
   return (
 
