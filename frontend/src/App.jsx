@@ -19,7 +19,5 @@ export default function App() {
           <Route path="/apptbook" element={<ApptBook />} />
         </Route>
       </Routes>
-    // <BrowserRouter>
-    // </BrowserRouter>
   )
 }
