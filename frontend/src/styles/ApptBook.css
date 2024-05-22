@@ -1,0 +1,123 @@
+.hero {
+  display: flex;
+}
+
+#appointment-card {
+  width: 400px;
+  height: 350px;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  margin-left: 350px;
+  margin-top: 35px;
+  margin-right: 110px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+#appointment-card h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 15px;
+  font-weight: 550;
+}
+
+.appointment-details {
+  margin-bottom: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 15px;
+  margin-bottom: 30px;
+}
+
+.doctor-details {
+  display: flex;
+  align-items: center;
+  margin-bottom: 35px;
+  font-size: 15px;
+}
+
+.doctor-details img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 40px;
+}
+
+.clinic-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.appointment-details p,
+.clinic-details p {
+  display: flex;
+  align-items: center;
+}
+
+.appointment-details p span,
+.clinic-details p span {
+  margin-right: 5px;
+}
+
+.patient-details {
+  width: 400px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  margin-top: 30px;
+}
+.patient-details p {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.radio-group {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.radio-group div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.radio-group input[type="radio"] {
+  height: 15px;
+  width: 15px;
+}
+.info-inputs {
+  margin-bottom: 20px;
+}
+
+.info-inputs input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 8px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+.payment-options {
+  margin-bottom: 20px;
+}
+
+
+.confirm-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
