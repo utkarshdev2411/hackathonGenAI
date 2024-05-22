@@ -4,9 +4,9 @@ import "../styles/DrDetails.css"; // Make sure to create this CSS file
 
 const DrDetails = () => {
   return (
-    <div className="doctor-profile-container">
-      <div className="profile-section">
-        <div className="doctor-info">
+    <div id="doctor-profile-container">
+      <div id="profile-section">
+        <div id="doctor-info">
           <ProfileCard />
         </div>
 
@@ -14,31 +14,68 @@ const DrDetails = () => {
           <h3>Clinic Address</h3>
           <p>Timings</p>
           <button>Book Online Appointment</button>
-        </div>
+        </div> */}
       </div>
 
       <div className="appointment-section">
-        <h2>Pick a time slot</h2>
-        <div className="date-picker">
-          Date picker component goes here
-        </div>
-        <div className="time-slots">
-          Time slots go here
-        </div> */}
+        <AppointmentComponent/>
       </div>
     </div>
   );
 };
 
+
+function AppointmentComponent() {
+  return (
+    <div className="clinic-appointment">
+
+      <div className="header">
+        <h1>Clinic Appointment</h1>
+        <span className="price-tag">Rs 2000</span>
+      </div>
+
+      <div className="date-picker">
+        <label htmlFor="date">Date</label>
+        <input type="date" id="date" name="date" />
+      </div>
+
+      <div className="time-picker">
+        <label htmlFor="time">Time</label>
+        <input type="time" id="time" name="time" />
+      </div>
+
+
+
+
+      <div className="date-tabs">
+        <button className="date-tab">Today</button>
+        <button className="date-tab">Tomorrow</button>
+        <button className="date-tab">Fri, 24 May</button>
+      </div>
+
+      <div className="time-slots">
+        <div className="morning-slots">
+          <h3>Morning</h3>
+          <button className="time-slot">11:30 AM</button>
+          <button className="time-slot">11:45 AM</button>
+        </div>
+        <div className="afternoon-slots">
+          <h3>Afternoon</h3>
+          <button className="time-slot">12:00 PM</button>
+          <button className="time-slot">12:15 PM</button>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+
+
 const ProfileCard = () => {
   return (
-    <div className="profile-card">
-      <div>
-        <img
-          src="src/assets/demodr.jpg"
-          alt="Profile"
-          className="profile-image"
-        />
+    <div id="profile-card">
+      <div id="img">
+        <img src="src/assets/demodr.jpg" alt="Profile" id="profile-image" />
       </div>
 
       <div className="profile-header">
@@ -47,7 +84,6 @@ const ProfileCard = () => {
         <p>MDS - Implantologist, Cosmetic/Aesthetic Dentist</p>
         <p>
           <strong>23+ years Experience Overall </strong>
-          <span className="dental-icon">DENTAL</span>
         </p>
 
         <div className="profile-body">
@@ -61,9 +97,11 @@ const ProfileCard = () => {
             including Single Sitting Root Canal, more...
           </p>
         </div>
-      </div>  
+      </div>
     </div>
   );
+
+  
 };
 
 export default DrDetails;
