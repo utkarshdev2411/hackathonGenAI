@@ -2,7 +2,9 @@ import React from 'react';
 import '../styles/Home.css'; // Make sure to name your CSS file accordingly
 
 function Home() {
+
   return (
+
     <div className="cosmo-chat">
 
       <aside className="sidebar">
@@ -42,6 +44,7 @@ function Home() {
       </footer>
     </div>
   );
+
 }
 const ProfileCard = () => {
   return (
