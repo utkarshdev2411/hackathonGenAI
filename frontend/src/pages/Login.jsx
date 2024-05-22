@@ -9,10 +9,6 @@ import { XLoginButton } from "react-social-login-buttons";
 const Login = () => {
   return (
     <div className="login-container">
-      <div className="first">
-        <h1>Website Logo</h1>
-        <p> New User?<Link to="/signup"><span>Sign Up</span></Link> </p>
-      </div>
 
       <div className="second">
         <div className="left">
@@ -22,29 +18,30 @@ const Login = () => {
         <div className="right">
           <p>Welcome Back!</p>
           <form>
-            <label>Email</label>
+            <label className="text-lg tracking-wide text-slate-700 mb-2">Email</label>
             <input
-              className="icon"
+
+              className="icon outline-none mb-3 px-4 py-3 "
               type="email"
               placeholder="username01@gmail.com"
               required
             />
-            <label>Password</label>
-            <input type="password" placeholder="Password" required />
+            <label className="text-lg tracking-wide text-slate-700 mb-2">Password</label>
+            <input className="outline-none mb-3 px-4 py-3 " type="password" placeholder="Password" required />
+            
+            <Link className="my-4 text-sm text-blue-500 tracking-wide font-medium">Forgot password ?</Link>
             <div className="second-3">
-              <button type="submit">LOGIN</button>
-              <button type="button">FORGET PASSWORD?</button>
+              <button type="submit">Login</button>
             </div>
 
             <div className="third">
-              <span>login with</span>
+            <span className="text-xl text-center text-slate-600 font-semibold tracking-wide">Or</span>
               <div className="third-1">
-                <FacebookLoginButton className="thirder" onClick={() => alert("Hello")} />
                 <GoogleLoginButton className="thirder" onClick={() => alert("Hello")} />
-                <XLoginButton className="thirder" onClick={() => alert("Hello")} />
               </div>
             </div>
           </form>
+          <Link to={'/signup'} className=" hover:text-blue-600 mt-8 text-md text-gray-600 tracking-wide font-semibold">Don't have an Account, Sign Up here?</Link>
         </div>
       </div>
     </div>
