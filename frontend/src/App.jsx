@@ -1,15 +1,17 @@
 import React from 'react'
-import Navbar from './components/Navbar'
 import ApptBook from './pages/ApptBook'
 import DrDetails from './pages/DrDetails'
 import Home from './pages/Home'
 import Login from './pages/Login'
-import { BrowserRouter , Routes, Route } from 'react-router-dom'
+import {Routes, Route} from 'react-router-dom'
 import SignUp from './pages/SignUp'
-import Layout from './components/Layout'
+import Layout from './components/Layout';
+import {ToastContainer} from 'react-toastify'
 
 export default function App() {
   return (
+    <>
+    <ToastContainer/>
       <Routes >
         <Route path='/' element={<Layout />}>
           <Route path="/" element={<Home />} />
@@ -19,7 +21,5 @@ export default function App() {
           <Route path="/apptbook" element={<ApptBook />} />
         </Route>
       </Routes>
-    // <BrowserRouter>
-    // </BrowserRouter>
-  )
-}
+      </>
+  )}

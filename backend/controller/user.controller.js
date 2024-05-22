@@ -27,10 +27,12 @@ export const createUser = async (req, res) => {
                 res
                     .status(StatusCodes.CREATED)
                     .cookie("token", token)
-                    .json({
-                        token,
-                        user
-                    })
+                    .json(
+                        {
+                            token,
+                            user
+                        }
+                    )
             })
         })
     }
@@ -73,8 +75,8 @@ export const getCurrentUser = async (req, res) => {
         const data = req.user;
         const user = await userModel.findOne({ email: data.email })
         res
-        .status(StatusCodes.OK)
-        .json(user)
+            .status(StatusCodes.OK)
+            .json(user)
     } catch (error) {
         res.josn({ err })
     }
