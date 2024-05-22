@@ -1,16 +1,34 @@
-.doctor-profile-container{
-    padding-top: 80px;
-    padding-left: 50px;
+#doctor-profile-container {
+  padding-top: 80px;
+  padding-left: 50px;
+  display: flex;
+  /* justify-content: center; */
+  align-items: space-between;
 }
 
-.profile-card {
+.profile-section {
+  margin-right: 40px;
+}
+
+#profile-card {
+  width: 870px;
+  height: 300px;
   font-family: Arial, sans-serif;
   border: 1px solid #e0e0e0;
   border-radius: 8px;
   padding: 20px;
-  width: 870px;
-  height: 300px;
+  display: flex;
+  flex-direction: row;
+}
 
+#img {
+  margin-right: 30px;
+}
+
+#profile-image {
+  height: 120px;
+  width: 200px;
+  flex: 1;
 }
 
 .profile-header {
@@ -18,22 +36,115 @@
   flex-direction: column;
 }
 
-.profile-image {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  margin-right: 20px;
+.profile-header p {
+  font-size: 16px;
+  margin-bottom: 2px;
 }
 
+.profile-header h1 {
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
-
-.dental-icon {
-  /* Add styles for the dental icon here */
+.profile-body {
 }
 
 .rating-verified {
-  margin-top: 20px;
+  font-size: 17px;
+  margin-top: 15px;
+}
+
+.dental-icon {
 }
 
 .verified-checkmark {
-  /* Add styles for the verified checkmark here */
 }
+
+.appointment-section {
+  margin-left: 30px;
+}
+
+.clinic-appointment {
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 20px;
+  min-width: 400px; 
+  margin: auto;
+  border: 1px solid #ccc;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.date-picker{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+  gap: 10px;
+}
+
+.time-picker{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  gap: 10px;  
+}
+
+.price-tag {
+  background-color: #4caf50; 
+  color: white; 
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.location-selector {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+
+.date-tabs {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.date-tab {
+  background-color: #fff;
+  border: 1px solid #199fd9;
+  color : #199fd9;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.time-slots h3 {
+  margin-bottom: 10px;
+}
+
+.time-slot {
+  background-color: #e0e0e0;
+  background-color: #fff;
+  border: 1px solid #199fd9;
+  color : #199fd9;
+  padding: 5px 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.date-tab:hover, .time-slot:hover {
+  background-color:  #199fd9; /* Replace with your desired color */
+  color: #fff; /* Replace with your desired text color */
+}
+
