@@ -1,4 +1,3 @@
-import React from 'react';
 import '../styles/Home.css'; // Make sure to name your CSS file accordingly
 
 function Home() {
@@ -54,7 +53,7 @@ const ProfileCard = () => {
       </div>
 
       <div className="info-section">
-        <h2 id="dr-name">Dr. Rahul's Dentalville</h2>
+        <h2 id="dr-name">Dr. Rahul Dentalville</h2>
         <p id="dr-experience">1 Dentist - 18 years experience</p>
         <p id="dr-location">Thane West</p>
         <p id="dr-fees">₹500 Consultation Fees</p>

@@ -25,7 +25,6 @@ genai.configure(api_key=os.getenv('GOOGLE_API_KEY'))
 #     return response.text
 
 from flask import Flask, request, jsonify
-import genai
 
 app = Flask(__name__)
 
@@ -45,4 +44,4 @@ def get_gemini_response():
     return jsonify({'response': response.text})
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5124)

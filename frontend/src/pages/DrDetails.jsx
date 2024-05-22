@@ -1,5 +1,5 @@
 // React Component JSX
-import React from "react";
+// import React from "react";
 import "../styles/DrDetails.css"; // Make sure to create this CSS file
 
 const DrDetails = () => {
