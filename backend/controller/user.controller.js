@@ -3,7 +3,6 @@ import { StatusCodes } from 'http-status-codes'
 import bcrypt from 'bcrypt'
 import jwt from 'jsonwebtoken'
 
-
 export const createUser = async (req, res) => {
     const { name, email, password } = req.body
 
